@@ -1,5 +1,5 @@
 html { height: 100% }
-body { height: 95% }
+body { height: 95%; background-color: black;color:orange;  }
 
 #content { height: 100%; width: 100% }
 
@@ -43,12 +43,16 @@ body { height: 95% }
 }
 
 .numDisplay {
-  border: 2px solid black;
+  border: 10px dotted orange;
   padding: 5px;
   flex: 1 1 30%;
   justify-content: center;
   align-items: center;
   display: flex;
+  background-image: url("Math.jpg");
+  background-size: 100% 100%;
+  color: black;
+  font-size: 1000%;
 }
 
 .keyList {
@@ -81,19 +85,19 @@ body { height: 95% }
 }
 
 .hintcell {
-  border: 1px solid black;
+  border: 12px solid orange;
   padding: 5px;
   text-align: center;
   width: 40px;
 }
 
 .needsreview {
-  background-color: red;
+  background-color: white;
   color: white;
 }
 
 .correct {
-  background-color: green;
+  background-color: violet;
   color: white;
 }
 

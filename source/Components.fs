@@ -93,7 +93,7 @@ module Sounds =
         Audio.Create("Cheer5.m4a")
         Audio.Create("Cheer6.m4a")
         ]
-    let bomb = Audio.Create("Grenade Explosion-SoundBible.com-2100581469.mp3")
+    let bomb = Audio.Create("GhostBoom.m4a")
     let SoundSetting = PersistentSetting("Sound", On)
 open Sounds
 
@@ -246,12 +246,6 @@ type MathBox() as this =
                             R.com<HintTable, HintProps, HintState> {
                                 cells = prob.HintCells
                             } []
-                            // show review list, if any
-                            (if prob.ReviewList.Length > 0 then
-                                R.ul [ClassName "reviewList"] (
-                                    prob.ReviewList |> List.map (fun(x, y, prob, ans, given) -> R.li [] [unbox (sprintf "%s = %s (you guessed %s)" prob ans given)])
-                                )
-                                else nothing)
                         ]
                         else nothing)
                     ]
